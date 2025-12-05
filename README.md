@@ -14,12 +14,12 @@
 
 ```mermaid
 graph LR
-    Client[📱 Python Client / SDK] -- 1. Where is the server? --> Gist[GitHub Gist (Phonebook)]
+    Client["📱 Python Client / SDK"] -- 1. Where is the server? --> Gist["GitHub Gist (Phonebook)"]
     Gist -- 2. Returns URL --> Client
-    Client -- 3. Secure HTTPS Request --> Cloudflare[☁️ Cloudflare Edge]
-    Cloudflare -- 4. HTTP2 Tunnel --> PC[🏠 Local PC (HybridServer)]
-    PC -- 5. Auth Check --> Flask[🛡️ Security Guard]
-    Flask -- 6. Forward --> Ollama[🦙 Local LLM]
+    Client -- 3. Secure HTTPS Request --> Cloudflare["☁️ Cloudflare Edge"]
+    Cloudflare -- 4. HTTP2 Tunnel --> PC["🏠 Local PC (HybridServer)"]
+    PC -- 5. Auth Check --> Flask["🛡️ Security Guard"]
+    Flask -- 6. Forward --> Ollama["🦙 Local LLM"]
 ```
 
 ## ✨ Features
